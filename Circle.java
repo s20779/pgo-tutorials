@@ -1,21 +1,20 @@
-package zadanie01;
+package Cwiczenia11zad1;
 
-public class Circle implements Figure{
+public class Circle implements Figura {
 
-    private double radius;
+    private double promien;
 
-    public Circle(double radius){
-        this.radius = radius;
+    public Circle(double r){
+        this.promien=r;
     }
 
     @Override
-    public double getPerimeter(){
-        return 2*Math.PI*radius;
+    public double getPermiter() {
+        return 2*Math.PI*promien;
     }
 
     @Override
-    public double getArea(){
-        return Math.PI  * radius * radius;
+    public double getArea() {
+        return Math.PI*(promien*promien);
     }
-
 }

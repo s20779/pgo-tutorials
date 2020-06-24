@@ -1,25 +1,28 @@
-package zadanie03;
+package Cwiczenia11zad3;
 
-import java.time.LocalDate;
+public class Employee extends Person {
 
-class Employee extends Person {
-
-    protected int hireDate; //year
-    protected String companyName;
-    protected double salary;
+    private int hireDate;
+    private String companyName;
+    private double salary;
 
     public Employee(String firstName, String lastName, int birthdayYear, int hireDate, String companyName, double salary) {
         super(firstName, lastName, birthdayYear);
-        this.hireDate = hireDate;
-        this.companyName = companyName;
-        this.salary = salary;
+        this.hireDate=hireDate;
+        this.companyName=companyName;
+        this.salary=salary;
     }
 
-    public int getJobSeniority() {
-        return LocalDate.now().getYear() - hireDate;
+    public int getJobSeniority(){
+        return 2020-hireDate;
     }
 
-    public double getSalary() {
+    public double getSalary(){
         return salary;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

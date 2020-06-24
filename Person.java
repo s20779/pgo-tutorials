@@ -1,20 +1,22 @@
-package zadanie03;
-
-import java.time.LocalDate;
+package Cwiczenia11zad3;
 
 public abstract class Person {
 
-    protected String firstName;
-    protected  String lastName;
-    protected int birthdayYear;
+    private String firstName, lastName;
+    private int birthdayYear;
 
-    public Person(String firstName, String lastName, int birthdayYear){
+    public Person(String firstName, String lastName, int birthdayYear) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthdayYear = birthdayYear;
     }
 
     public int getAge(){
-        return LocalDate.now().getYear() - birthdayYear;
+        return 2020-birthdayYear;
+    }
+
+    @Override
+    public String toString() {
+        return "lastName " + lastName + " and age " + getAge();
     }
 }

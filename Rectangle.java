@@ -1,23 +1,22 @@
-package zadanie01;
+package Cwiczenia11zad1;
 
-public class Rectangle implements Figure {
+public class Rectangle implements Figura{
 
-    private double sideA;
-    private double sideB;
+    private double a,b;
 
     public Rectangle(double sideA, double sideB) {
-        this.sideA = sideA;
-        this.sideB = sideB;
+        this.a = sideA;
+        this.b = sideB;
     }
 
     @Override
-    public double getPerimeter() {
-        return 2 * (sideA + sideB);
+    public double getPermiter() {
+        return 2*(a+b);
     }
 
     @Override
     public double getArea() {
-        return sideA * sideB;
+        return a*b;
     }
 
 }

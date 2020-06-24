@@ -1,4 +1,4 @@
-package zadanie02;
+package Cwiczenia11zad2;
 
 public class Cat extends Animal implements Moveable {
 
@@ -13,11 +13,11 @@ public class Cat extends Animal implements Moveable {
 
     @Override
     public void start() {
-        System.out.println("Cat starts!");
+        System.out.println(getType()+" Starts!");
     }
 
     @Override
     public void stop() {
-        System.out.println("Cat stopped!");
+        System.out.println(getType()+" Stopped!");
     }
 }

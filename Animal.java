@@ -1,12 +1,16 @@
-package zadanie02;
+package Cwiczenia11zad2;
 
 public abstract class Animal {
-    private  String name;
+    private String name;
+
     public Animal(String name){
-        this.name = name;
+        this.name=name;
     }
+
     public abstract String getType();
+
     public String getName() {
-         return name;
-     }
- }
+        return name;
+    }
+
+}
